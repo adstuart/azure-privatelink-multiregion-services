@@ -18,8 +18,8 @@ The main article is [here](https://github.com/adstuart/azure-privatelink-multire
 
 | Service      | Microsoft Docs | Video | Notes |
 | ----------- | ----------- | ----------- | ----------- |
-| Azure Storage | - | https://youtu.be/bmFMNQkBf2A | ----------- |
-| Azure Site Recovery | - | https://youtu.be/_S5dA36SgsI | Largely built on Azure Storage, same pattern for Recovery Services vault and Storage account cache |
-| Azure Key Vault | [Link](https://learn.microsoft.com/en-us/azure/key-vault/general/private-link-diagnostics#dns-resolution-for-more-than-one-virtual-network) | - | Not possible to simulate regional failover |
+| Azure Storage |  | https://youtu.be/bmFMNQkBf2A |  |
+| Azure Site Recovery |  | https://youtu.be/_S5dA36SgsI | Largely built on Azure Storage, same pattern for Recovery Services vault and Storage account cache |
+| Azure Key Vault | [Link](https://learn.microsoft.com/en-us/azure/key-vault/general/private-link-diagnostics#dns-resolution-for-more-than-one-virtual-network) |  | Not possible to simulate regional failover |
 
 
