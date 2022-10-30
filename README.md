@@ -13,6 +13,7 @@ The main article is [here](https://github.com/adstuart/azure-privatelink-multire
 | Service      | Microsoft Docs | Video | Notes |
 | ----------- | ----------- | ----------- | ----------- |
 | Azure SQL      |        | https://youtu.be/weZ-SPO-tIc | Uses Failover Groups and additional FQDN CNAME|
+| Azure Service Bus | [Link](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-dr#private-endpoints) | | Namespace pairing requires Premium SKU |
 
 ## Azure PaaS services that do require user-intevention of DNS records upon failover (or use of regional specific Azure DNS Private Zones)
 
