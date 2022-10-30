@@ -14,8 +14,7 @@ The main article is [here](https://github.com/adstuart/azure-privatelink-multire
 | ----------- | ----------- | ----------- | ----------- |
 | Azure SQL      |        | https://youtu.be/weZ-SPO-tIc | Uses Failover Groups and additional FQDN CNAME|
 | Azure Service Bus | [Link](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-dr#private-endpoints) | | Namespace pairing requires Premium SKU |
-| Azure Event Hub | [Link](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-geo-dr?tabs=portal#private-endpoints) | | - Namespace paring requires Standard SKU or above
-- Uses same Prvate DNS zone suffix as Service Bus |
+| Azure Event Hub | [Link](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-geo-dr?tabs=portal#private-endpoints) | | - Namespace paring requires Standard SKU or above |
 
 ## Azure PaaS services that do require user-intevention of DNS records upon failover (or use of regional specific Azure DNS Private Zones)
 
