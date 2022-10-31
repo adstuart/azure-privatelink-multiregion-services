@@ -4,7 +4,9 @@ A list of all Azure PaaS services that utilise Private Link, and a categorisatio
 
 ## Context
 
-The main article is [here](https://github.com/adstuart/azure-privatelink-multiregion), please consider this an addendum of links to further Azure service-specific guides
+The main article is [here](https://github.com/adstuart/azure-privatelink-multiregion), please consider this an addendum of links to further Azure service-specific guides.
+
+_This page is a living document, and I will add more services as I find time to assess them, thanks!_
 
 # Service List(s)
 
