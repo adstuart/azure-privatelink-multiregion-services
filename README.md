@@ -1,6 +1,6 @@
 # Azure Private Link - Regional failover Services behaviour
 
-A list of all Azure PaaS services that utilise Private Link, and a categorisation of how they behave in respect to Multi-Region failover and DNS integration
+A list of all Azure PaaS services that utilise Private Link, and a categorisation of how they behave in respect to Multi-Region failover and DNS integration. Click the links to official MS Docs, as well as Video links to more detailed tutorials.
 
 ## Context
 
