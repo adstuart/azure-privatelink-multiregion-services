@@ -28,3 +28,9 @@ _This page is a living document, and I will add more services as I find time to 
 | Azure Cosmos DB | [See comments here](https://youtu.be/FbynO1fM9Ag) | https://youtu.be/_WrJT7pLRv4 | Clients can use regional FQDN, but this happens [after endpoint discovery](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/tutorial-global-distribution?tabs=dotnetv2%2Capi-async#rest) via the Global FQDN |
 | Azure Static Web Apps | [Link](https://learn.microsoft.com/en-us/azure/static-web-apps/private-endpoint) | | N/a to staging environment, front-end only |
 
+## Pending
+
+| Service      | Microsoft Docs | Video | Notes |
+| ----------- | ----------- | ----------- | ----------- |
+| Azure Database for Postgres (Single Server) | [Link](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-data-access-and-security-private-link) | | Only applies to Single Server, Flexible Server uses VNet injection instead. Uses concept of [read replicas](https://learn.microsoft.com/en-us/azure/postgresql/single-server/how-to-read-replicas-portal) for regional DR. |
+
