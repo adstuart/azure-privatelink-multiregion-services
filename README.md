@@ -32,5 +32,5 @@ _This page is a living document, and I will add more services as I find time to 
 
 | Service      | Microsoft Docs | Video | Notes |
 | ----------- | ----------- | ----------- | ----------- |
-| Azure Database for Postgres (Single Server) | [Link](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-data-access-and-security-private-link) | | Only applies to Single Server, Flexible Server uses VNet injection instead. Uses concept of [read replicas](https://learn.microsoft.com/en-us/azure/postgresql/single-server/how-to-read-replicas-portal) for regional DR. |
+| Azure Database for Postgres (Single Server) | [Link](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-data-access-and-security-private-link) | | [1] Only applies to Single Server, Flexible Server uses VNet injection instead. [2] Uses concept of [read replicas](https://learn.microsoft.com/en-us/azure/postgresql/single-server/how-to-read-replicas-portal) for regional DR. See options for regional replication [here](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-read-replicas#cross-region-replication). Requires General Purpose tier or above for multi-region replication. |
 
