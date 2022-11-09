@@ -28,9 +28,9 @@ _This page is a living document, and I will add more services as I find time to 
 | Azure Cosmos DB | [See comments here](https://youtu.be/FbynO1fM9Ag) | https://youtu.be/_WrJT7pLRv4 | Clients can use regional FQDN, but this happens [after endpoint discovery](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/tutorial-global-distribution?tabs=dotnetv2%2Capi-async#rest) via the Global FQDN |
 | Azure Static Web Apps | [Link](https://learn.microsoft.com/en-us/azure/static-web-apps/private-endpoint) | | N/a to staging environment, front-end only |
 
-## Pending
+## Azure PaaS services that do not have service-level regional failover (I.e. you must handle this as the application level)
 
 | Service      | Microsoft Docs | Video | Notes |
 | ----------- | ----------- | ----------- | ----------- |
-| Azure Database for Postgres (Single Server) | [Link](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-data-access-and-security-private-link) | | [1] Only applies to Single Server, Flexible Server uses VNet injection instead. [2] Uses concept of [read replicas](https://learn.microsoft.com/en-us/azure/postgresql/single-server/how-to-read-replicas-portal) for regional DR. See options for regional replication [here](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-read-replicas#cross-region-replication). Requires General Purpose tier or above for multi-region replication. |
+| Azure Database for Postgres (Single Server) | [Link](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-data-access-and-security-private-link) | | [1] Only applies to Single Server, Flexible Server uses VNet injection instead. <br> [2] Uses concept of [read replicas](https://learn.microsoft.com/en-us/azure/postgresql/single-server/how-to-read-replicas-portal) for regional DR. See options for regional replication [here](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-read-replicas#cross-region-replication). Requires General Purpose tier or above for multi-region replication. <br> [3] User is responsible for regional failover, you must [repoint](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-read-replicas#failover-to-replica:~:text=Point%20your%20application%20to%20the%20(former)%20replica) your API or connection string at the replica FQDN. |
 
