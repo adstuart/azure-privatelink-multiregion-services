@@ -26,5 +26,5 @@ _This page is a living document, and I will add more services as I find time to 
 | Azure Site Recovery |  | https://youtu.be/_S5dA36SgsI | Largely built on Azure Storage, same pattern for Recovery Services vault and Storage account cache |
 | Azure Key Vault | [Link](https://learn.microsoft.com/en-us/azure/key-vault/general/private-link-diagnostics#dns-resolution-for-more-than-one-virtual-network) | https://youtu.be/vlGK27D3bPg | Not possible to simulate regional failover |
 | Azure Cosmos DB | [See comments here](https://youtu.be/FbynO1fM9Ag) | https://youtu.be/_WrJT7pLRv4 | Clients can use regional FQDN, but this happens [after endpoint discovery](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/tutorial-global-distribution?tabs=dotnetv2%2Capi-async#rest) via the Global FQDN |
-
+| Azure Static Web Apps | [Link](https://learn.microsoft.com/en-us/azure/static-web-apps/private-endpoint) | | N/a to staging environment, front-end only |
 
