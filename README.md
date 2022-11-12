@@ -15,6 +15,7 @@ _This page is a living document, and I will add more services as I find time to 
 | Service      | Microsoft Docs | Video | Notes |
 | ----------- | ----------- | ----------- | ----------- |
 | Azure SQL      |        | https://youtu.be/weZ-SPO-tIc | Uses Failover Groups and additional FQDN CNAME|
+| Azure SQL Managed Instance | [Link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/auto-failover-group-sql-mi?view=azuresql&tabs=azure-powershell) | | [1] Requires Layer-3 IP connectivity between SQL MI subnets for data replication (Unlike Azure SQL which replicates out of band <br> [2] Value prop of Private Endpoint for SQL MI is unclear, why is a PE needed for a service that is already VNet-injected? |
 | Azure Service Bus | [Link](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-dr#private-endpoints) | https://youtu.be/qukADwfihZY | Namespace pairing requires Premium SKU |
 | Azure Event Hub | [Link](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-geo-dr?tabs=portal#private-endpoints) | https://youtu.be/qukADwfihZY | Namespace paring requires Standard SKU or above |
 
