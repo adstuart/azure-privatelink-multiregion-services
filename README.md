@@ -2,6 +2,8 @@
 
 A list of all Azure PaaS services that utilise Private Link, and a categorisation of how they behave in respect to Multi-Region failover and DNS integration. Click the links to official MS Docs, as well as Video links to more detailed tutorials.
 
+:warning: This does not include _all_ Azure PaaS services, only those that utilise Private Link. Those that follow the VNet integration model are n/a in relation to this guidance.
+
 ## Context
 
 The main article is [here](https://github.com/adstuart/azure-privatelink-multiregion), please consider this an addendum of links to further Azure service-specific guides.
@@ -34,4 +36,5 @@ _This page is a living document, and I will add more services as I find time to 
 | Service      | Microsoft Docs | Video | Notes |
 | ----------- | ----------- | ----------- | ----------- |
 | Azure Database for Postgres (Single Server) | [Link](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-data-access-and-security-private-link) | https://youtu.be/Tzr2QRYSyRQ | [1] Only applies to Single Server, Flexible Server uses VNet injection instead. <br> [2] Uses concept of [read replicas](https://learn.microsoft.com/en-us/azure/postgresql/single-server/how-to-read-replicas-portal) for regional DR. See options for regional replication [here](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-read-replicas#cross-region-replication). Requires General Purpose tier or above for multi-region replication. <br> [3] User is responsible for regional failover, you must [repoint](https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-read-replicas#failover-to-replica:~:text=Point%20your%20application%20to%20the%20(former)%20replica) your API or connection string at the replica FQDN. |
+| Azure Automation | [Link for DR docs](https://learn.microsoft.com/en-us/azure/automation/automation-disaster-recovery?tabs=win-hrw%2Cps-script%2Coption-one) [Link for PL doc](https://learn.microsoft.com/en-us/azure/automation/how-to/private-link-security) | | User is required to self-replicate contents of automation account and associate dependencies **and** manually re-deploy agents etc to use the region-B automation assets in a region down scenario |
 
